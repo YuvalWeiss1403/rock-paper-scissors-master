@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <!-- Score
+  Rules
+
+  You Picked
+  The House Picked
+
+  You Win
+  You Lose
+
+  Play Again -->
+
+</head>
+<body>
+<div class="game-container">
+<div class="score-container">
+  <div class="game-name">
+  <img alt="game-logo" src="./images/logo.svg">
+  </div>
+  <div class="score">
+    <div class="score-heading">score</div>
+    <div id="score-value">12</div>
+  </div>
+</div>
+  <div class="game-container">
+    <div id='step-one' class="step-1">
+    <div class="top-icons">
+    <div id="paper-button" class="paper-container"><span id="paper"></span></div>
+    <div id="scissors-button" class="scissors-container"><span id="scissors"></span></div>
+  </div><div class="bottom-icon">
+    <div id="rock-button" class="rock-container"><span id="rock"></span></div> 
+  </div>
+  </div>
+  <div id="step-two" class="step-2">
+    <div id="you-picked" class="you-picked-container">
+      <div class="you-picked-heading">YOU PICKED</div>
+    </div>
+    <div id="step-four" class="step-4">
+      <div class="who-won-container">
+        <div id="who-won" class="who-won-heading"></div>
+        <button id="play-again">PLAY AGAIN</button>
+      </div>
+    </div>
+    <div id="house-picked" class="the-house-picked-container">
+      <div class="the-house-picked-heading">THE HOUSE PICKED</div>
+      <div id="wait-for-house-picked"></div>
+    </div>
+  </div>
+  </div>
+  <div class="rules-container">
+    <button id="rules-button">RULES</button>
+    <div id="rules-modal" class="modal">
+    <div class="modal-content">
+    <span id='close-button' class="close">&times;</span>
+    <div class="modal-heading">Rules</div>
+    <img alt="rules" src="./images/image-rules.svg">
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Moveo bootcamp</a>. 
+    Coded by <a href="#">Yuval weiss</a>.
+  </div>
+</div>
+  <script src="./main.js"></script>
+</body>
+</html>
